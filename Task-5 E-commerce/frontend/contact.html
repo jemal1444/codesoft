@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jemal Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+	    <div class="logo">
+			  <img src="images/logos.png" alt="Jemal Shop Logo">
+		</div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" class="under">HOME</a></li>
+                    <li><a href="cart.html" class="under">Add to Cart</a></li>
+					<li><a href="contact.html" class="under">CONTACT US</a></li>
+                    <li><a href="about.html" class="under">ABOUT US</a></li>
+					
+            </ul>
+        </div>
+		 <div class="search">
+                <a href=""
+                    ><input
+                        type="text"
+                        placeholder="search products"
+                        id="input"
+                    />
+                    <ion-icon class="s" name="search"></ion-icon>
+                </a>
+            </div>
+    </header>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear about our product from you! Fill out the form below or reach out to us via our social media channels.</p>
+
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+       
+            <p>&copy; 2024-2028 Jemal Shop. All Rights Reserved.</p>
+      
+    </footer>
+</body>
+</html>

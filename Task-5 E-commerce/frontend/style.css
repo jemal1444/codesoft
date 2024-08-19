@@ -1,0 +1,407 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #4caf50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+  width: 100px;      /* Adjust the width as needed */
+  height: 100px;     /* Set height equal to width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circle area */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu ul li {
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s;
+	justify-content: center; /* Center items horizontally */
+}
+
+.menu ul li a:hover {
+    color: #f4a261;
+}
+
+.search {
+    position: relative;
+	 padding: 30px;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search ion-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.heading ul {
+    display: none;
+}
+
+.heading1 {
+    display: none;
+}
+
+/* Responsive Header for mobile */
+@media (max-width: 768px) {
+    .heading ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #444;
+        padding: 10px;
+    }
+
+    .heading1 {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+/* Section styling */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+
+/* Specific styles for Section 1 */
+.section1 {
+    background-image: linear-gradient(45deg,
+                    rgba(245, 70, 66, 0.75),
+                    rgba(8, 83, 156, 0.75)), url('images/img13.png'); /* Light blue background */
+					width: 100%;
+     height: 280px;
+     text-align: center;
+     color: #fff;
+     width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+/* Define the image slider container */
+.img-slider {
+  width: 400%; /* Adjust based on the number of images */
+  height: 100%;
+  display: flex;
+  animation: scroll 10s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Define each image to fit within the slider */
+.img-slider img {
+  width: 25%; /* Adjust based on the number of images */
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Specific styles for Section 2 */
+.section2 {
+    background-image: linear-gradient(45deg,
+                    rgba(245, 70, 66, 0.75),
+                    rgba(8, 83, 156, 0.75)), url('images/img11.png');  /* Light cream background */
+    border: 1px solid #f5deb3; /* Wheat border */
+}
+
+
+
+.img-slider img {
+	
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+	 display: flex;
+            flex-wrap: wrap;
+           display: inline-block;
+            width: 23%; /* Adjust width to fit 4 images in a row */
+           
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.items img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.items .name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.items .price {
+    color: #e76f51;
+    margin: 10px 0;
+}
+
+.items .info {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Footer styling */
+footer {
+   position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Padding for spacing */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f4a261;
+}
+
+footer .heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .div {
+    margin: 5px 0;
+}
+
+.footer1 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Section */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+	  text-align:center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #5cb85c;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #4cae4c;
+    }
+/* For shop */
+.container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+ /* General styles for cart section */
+.cart-section {
+    height: 300px;
+    width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for visibility */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+.cart-section, .about-section, .contact-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+/* Styles for individual cart items */
+.cart-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Styles for the cart summary */
+.cart-summary {
+    padding: 20px;
+	background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.cart-summary p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.cart-summary #total-price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Styles for the checkout button */
+#checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#checkout-btn:hover {
+    background-color: #218838;
+}
+
+#checkout-btn:focus {
+    outline: none;
+}

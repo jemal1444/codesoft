@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("/images/hb1.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	
+}
+
+.login-container, .chat-container, .register-btn, .login-btn, .registerForm {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
+	
+}
+       
+        }
+.login-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: bold;
+    border-radius: 4px;
+
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.room-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+	
+}
+
+.room {
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.room:hover {
+    background-color: #bbb;
+}
+
+.messages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+}
+ .title-rectangle {
+       background-color: #4CAF50;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: left;
+            border-radius: 8px 8px 0 0;
+ }
